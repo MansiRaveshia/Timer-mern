@@ -35,8 +35,8 @@ function App() {
         setHour(computedHour );
         setMilisecond(computedMilisecond)
 
-        setCounter(counter => counter + 1);
-      }, 1)
+        setCounter(counter => counter + 10);
+      }, 10)
     }
     return () => clearInterval(intervalId);
   }, [isActive, counter])
